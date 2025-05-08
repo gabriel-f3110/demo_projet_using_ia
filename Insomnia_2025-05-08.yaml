@@ -1,0 +1,750 @@
+type: collection.insomnia.rest/5.0
+name: Scratch Pad
+meta:
+  id: wrk_scratchpad
+  created: 1736787216875
+  modified: 1736787216875
+collection:
+  - name: First Java Web Project
+    meta:
+      id: fld_5f7aba7f936c4e26990db34d0dffcac0
+      created: 1743718859093
+      modified: 1744414179910
+      sortKey: -1743718859093
+  - name: UserAuth
+    meta:
+      id: fld_aefa6300645545bdac47f589988404ae
+      created: 1744414183860
+      modified: 1744414183860
+      sortKey: -1744414183860
+  - name: AWS
+    meta:
+      id: fld_dc29750c508948599d6c23b7c3ee021e
+      created: 1745203062904
+      modified: 1745533246072
+      sortKey: -1745203062904
+  - name: suap
+    meta:
+      id: fld_d4a4e9a647674d4b94f18f88e1896b79
+      created: 1745675119661
+      modified: 1745675119661
+      sortKey: -1745675119661
+  - name: demoProject
+    meta:
+      id: fld_1fa0423470744666a59b342150b2084b
+      created: 1746745185915
+      modified: 1746745185915
+      sortKey: -1746745185915
+    children:
+      - name: Aluno
+        meta:
+          id: fld_916a3dd6a07b4488b331692eaded0b6c
+          created: 1746745206684
+          modified: 1746745206684
+          sortKey: -1746745206684
+        children:
+          - url: http://localhost:8080/api/alunos
+            name: getAlunos
+            meta:
+              id: req_3aa056ec301749d68f2e5f4e1763c414
+              created: 1746745212196
+              modified: 1746745262660
+              isPrivate: false
+              sortKey: -1746745212196
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.0.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8080/api/alunos
+            name: createAluno
+            meta:
+              id: req_50d132cc40bf4e94998fdcb184bcf509
+              created: 1746745288631
+              modified: 1746745962972
+              isPrivate: false
+              sortKey: -1746745200933
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"nome": "Gabriel",
+                	"matricula": "20152040070288"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.0.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8080/api/alunos/1
+            name: updateAluno
+            meta:
+              id: req_103be5c06ca7472e8f744c6692c673ba
+              created: 1746745305225
+              modified: 1746745987397
+              isPrivate: false
+              sortKey: -1746745195301.5
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"nome": "Gabriel",
+                	"matricula": "20152040070288"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.0.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8080/api/alunos/1
+            name: deleteAluno
+            meta:
+              id: req_e23f6938eb9642efaff06531ff1e98c0
+              created: 1746745310890
+              modified: 1746745993558
+              isPrivate: false
+              sortKey: -1746745192485.75
+            method: DELETE
+            headers:
+              - name: User-Agent
+                value: insomnia/11.0.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8080/api/alunos/1
+            name: getAlunoById
+            meta:
+              id: req_be8826d85f4548ad9d87c9f0be8c6c0f
+              created: 1746745327766
+              modified: 1746745968799
+              isPrivate: false
+              sortKey: -1746745206564.5
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.0.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Biblioteca
+        meta:
+          id: fld_aeb2698bbcc2468ea5488d0601a9e090
+          created: 1746745358009
+          modified: 1746745358009
+          sortKey: -1746745196299.5
+        children:
+          - url: http://localhost:8080/api/bibliotecas
+            name: getBibliotecas
+            meta:
+              id: req_f749d1f552df41cf9c7c907a99a7e269
+              created: 1746745358010
+              modified: 1746745409047
+              isPrivate: false
+              sortKey: -1746745212196
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.0.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8080/api/bibliotecas
+            name: createBiblioteca
+            meta:
+              id: req_449a516ae003408fa5b742a29a7113d5
+              created: 1746745358011
+              modified: 1746746045330
+              isPrivate: false
+              sortKey: -1746745200933
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"nome": "Biblioteca Municipal de Itumbiara",
+                	"endereco": "Rua dos bobos, 0"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.0.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8080/api/bibliotecas/1
+            name: updateBiblioteca
+            meta:
+              id: req_61afab7549dc40beaa0c141c6c38668f
+              created: 1746745358011
+              modified: 1746746064763
+              isPrivate: false
+              sortKey: -1746745195301.5
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"nome": "Biblioteca Municipal de Itumbiara",
+                	"endereco": "Rua dos bobos, 0"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.0.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8080/api/bibliotecas/1
+            name: deleteBiblioteca
+            meta:
+              id: req_48c408bdbfa7499f868d459dd6c68800
+              created: 1746745358012
+              modified: 1746746069289
+              isPrivate: false
+              sortKey: -1746745192485.75
+            method: DELETE
+            headers:
+              - name: User-Agent
+                value: insomnia/11.0.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8080/api/bibliotecas/1
+            name: getBibliotecaById
+            meta:
+              id: req_b2e8426ad3fe42a086ed0212f1c5d472
+              created: 1746745358013
+              modified: 1746746054138
+              isPrivate: false
+              sortKey: -1746745206564.5
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.0.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Emprestimo
+        meta:
+          id: fld_c6e4e52f9fb345d0ad49945b10da5f29
+          created: 1746745442894
+          modified: 1746745442894
+          sortKey: -1746745191107.25
+        children:
+          - url: http://localhost:8080/api/emprestimos
+            name: getEmprestimos
+            meta:
+              id: req_fd27aa7d48aa413ba88140f89c78f6cd
+              created: 1746745442895
+              modified: 1746745655510
+              isPrivate: false
+              sortKey: -1746745212196
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.0.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8080/api/emprestimos
+            name: createEmprestimo
+            meta:
+              id: req_515d1d78e52b4e33b53526beb23ee371
+              created: 1746745442896
+              modified: 1746746334813
+              isPrivate: false
+              sortKey: -1746745200933
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"livroId": 1,
+                	"alunoId": 1,
+                	"responsavelEmprestimoId": 1
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.0.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8080/api/emprestimos/1
+            name: getEmprestimoById
+            meta:
+              id: req_a886280ef20c4cccb3b3fc7f50d8da8f
+              created: 1746745442898
+              modified: 1746746374972
+              isPrivate: false
+              sortKey: -1746745206564.5
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.0.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8080/api/emprestimos/renovar
+            name: renovarEmprestimo
+            meta:
+              id: req_caaae38c06c94b19b8afa3d99fcdfb0c
+              created: 1746745713558
+              modified: 1746748027857
+              isPrivate: false
+              sortKey: -1746745198117.25
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"emprestimoId": 1,
+                	"responsavelEmprestimoId": 1
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.0.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8080/api/emprestimos/devolver
+            name: devolverEmprestimo
+            meta:
+              id: req_28219d63593645ecba81a22bdb57664b
+              created: 1746745718621
+              modified: 1746748090546
+              isPrivate: false
+              sortKey: -1746745196709.375
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"emprestimoId": 1,
+                	"responsavelEmprestimoId": 1
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.0.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Livro
+        meta:
+          id: fld_e8bd5a247acf4aaa8e57f8c3eb14909c
+          created: 1746745485820
+          modified: 1746745485820
+          sortKey: -1746745188511.125
+        children:
+          - url: http://localhost:8080/api/livros
+            name: createLivro
+            meta:
+              id: req_197d862ce69a461faf26606fef1dc8ff
+              created: 1746745485822
+              modified: 1746746261609
+              isPrivate: false
+              sortKey: -1746745200933
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"titulo": "Hamlet",
+                	"autor": "William Shakespeare",
+                	"isbn": "1392184585301",
+                	"quantidadeDisponivel": 3
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.0.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8080/api/livros
+            name: getLivros
+            meta:
+              id: req_e84bb49357954027a29f8d9415125926
+              created: 1746745485822
+              modified: 1746745594836
+              isPrivate: false
+              sortKey: -1746745212196
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.0.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8080/api/livros/1
+            name: deleteLivro
+            meta:
+              id: req_1393868d59b04017a02b671dda36e76b
+              created: 1746745485823
+              modified: 1746746283123
+              isPrivate: false
+              sortKey: -1746745192485.75
+            method: DELETE
+            headers:
+              - name: User-Agent
+                value: insomnia/11.0.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8080/api/livros/1
+            name: updateLivro
+            meta:
+              id: req_8b6095ddf2a547a5b14cbbe33fbab3d2
+              created: 1746745485824
+              modified: 1746746280693
+              isPrivate: false
+              sortKey: -1746745195301.5
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"titulo": "Hamlet",
+                	"autor": "William Shakespeare",
+                	"isbn": "1392184585301",
+                	"quantidadeDisponivel": 3
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.0.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8080/api/livros/1
+            name: getLivroById
+            meta:
+              id: req_9eef3e11431748f396ca0aa1113b2821
+              created: 1746745485825
+              modified: 1746746174235
+              isPrivate: false
+              sortKey: -1746745206564.5
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.0.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Responsavel
+        meta:
+          id: fld_48282b26baf14ccabddb6a96c4d16f60
+          created: 1746745492122
+          modified: 1746745492122
+          sortKey: -1746745189809.1875
+        children:
+          - url: http://localhost:8080/api/responsaveis
+            name: getResponsaveis
+            meta:
+              id: req_a7ccc482641a416c9bb991b3093f12c5
+              created: 1746745492123
+              modified: 1746745557377
+              isPrivate: false
+              sortKey: -1746745212196
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.0.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8080/api/responsaveis
+            name: createResponsavel
+            meta:
+              id: req_9e703f8645764ce9857505794da4e818
+              created: 1746745492124
+              modified: 1746746146903
+              isPrivate: false
+              sortKey: -1746745200933
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"nome": "Joaquim Teixera"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.0.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8080/api/responsaveis/1
+            name: updateResponsavel
+            meta:
+              id: req_3bb8a0f5d8a8467694b191c08d17460f
+              created: 1746745492125
+              modified: 1746746161955
+              isPrivate: false
+              sortKey: -1746745195301.5
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"nome": "Joaquim Teixera"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.0.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8080/api/responsaveis/1
+            name: deleteResponsavel
+            meta:
+              id: req_b9123bc4c7c7473f8d592062057790a3
+              created: 1746745492125
+              modified: 1746746165709
+              isPrivate: false
+              sortKey: -1746745192485.75
+            method: DELETE
+            headers:
+              - name: User-Agent
+                value: insomnia/11.0.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:8080/api/responsaveis
+            name: getResponsavelById
+            meta:
+              id: req_5c6ca79506d54880b01a5de56120eaaa
+              created: 1746745492127
+              modified: 1746745559272
+              isPrivate: false
+              sortKey: -1746745206564.5
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.0.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1736787233479
+    modified: 1745675891524
+  cookies:
+    - id: e3014810-5c84-44ff-b782-997d3f7fecea
+      key: USER_SESSION
+      value: 308d0a0e-ab76-4817-8938-6c9166a44b49
+      domain: server.buscainfo24h.com
+      path: /
+      secure: false
+      httpOnly: true
+      creation: 2025-03-05T15:45:28.648Z
+      hostOnly: true
+      lastAccessed: 2025-03-05T15:45:28.648Z
+    - id: c822a4c1-8130-4b04-a52f-02ac87d2caf9
+      key: JSESSIONID
+      value: 5232F379599DF071701DD60FC38A55D9
+      domain: localhost
+      path: /
+      secure: false
+      httpOnly: true
+      creation: 2025-04-17T22:01:53.977Z
+      hostOnly: true
+      lastAccessed: 2025-04-17T22:18:58.879Z
+    - id: 4ff9c6df-4379-4d0b-aca5-722c68a6d07d
+      key: BIGipServer~Apps~pool_www-go
+      value: rd3o00000000000000000000ffff0a060422o8080
+      domain: www.go.gov.br
+      path: /
+      secure: false
+      httpOnly: true
+      creation: 2025-04-21T03:54:51.676Z
+      hostOnly: true
+      lastAccessed: 2025-04-21T03:54:51.676Z
+    - id: f1e73175-c6e3-4556-92aa-383a8f9c11c3
+      key: TS014d2fc0
+      value: 01c51a2261b78ff5815ab8e30f4b203486d6bf320c2194d5fbfe3c74b50cf8ac4f23d6729b33ac4033a88fd6270a7561ad46e9e23a0a18eea715e49757743a73dc425472a2
+      domain: www.go.gov.br
+      path: /
+      secure: false
+      httpOnly: false
+      creation: 2025-04-21T03:54:51.677Z
+      lastAccessed: 2025-04-21T03:54:51.677Z
+    - id: 105594c5-3473-44ff-9d2d-0865e7ee22ba
+      key: __Host-csrftoken
+      value: SQ5tjZBuez2snLsRhIaU1XZN9NuFcZpa
+      domain: suap.ifg.edu.br
+      path: /
+      secure: true
+      httpOnly: true
+      creation: 2025-04-26T13:46:53.326Z
+      hostOnly: true
+      lastAccessed: 2025-04-26T13:56:08.168Z
+    - id: 3b7c7467-4e2c-4319-be4e-a1079ab336ec
+      key: __Host-sessionid
+      value: 2j0cqwhbi9omwc609zkxpgj3rnlw4m16
+      domain: suap.ifg.edu.br
+      path: /
+      secure: true
+      httpOnly: true
+      creation: 2025-04-26T13:46:53.327Z
+      hostOnly: true
+      lastAccessed: 2025-04-26T13:56:08.168Z
+environments:
+  name: Base Environment
+  meta:
+    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1736787233370
+    modified: 1745675891525
+    isPrivate: false
+  data:
+    csrf_token: h086bIBMmfHodjB6eRgreGqiEhBTLGha0NAMldfHUMIXmFj8J6SMMQv509b5sqp4

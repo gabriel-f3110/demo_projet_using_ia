@@ -134,7 +134,7 @@ public class EmprestimoService {
     }
 
     // Tarefa agendada para verificar empréstimos em atraso e calcular multas (executado diariamente)
-    @Scheduled(fixedDelay = 15000)
+    @Scheduled(fixedDelay = 5 * 60 * 1000)
     @Transactional
     public void verificarEmprestimosAtrasados() {
         LocalDate hoje = LocalDate.now();

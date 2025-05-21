@@ -1,10 +1,13 @@
 package com.example.demoproject.model.dto;
 
+import jakarta.validation.constraints.Positive;
+
 public class LivroDTO {
     private Long id;
     private String titulo;
     private String autor;
     private String isbn;
+    @Positive(message = "A quantidade de livros deve ser maior que zero.")
     private Integer quantidadeDisponivel;
 
     public Long getId() {

@@ -11,6 +11,7 @@ public class EmprestimoDTO {
     private LocalDate dataDevolucaoReal;
     private Boolean renovado;
     private Double multa;
+    private Long responsavelEmprestimoId;
     private String responsavelEmprestimoNome;
 
     public Long getId() {
@@ -83,5 +84,13 @@ public class EmprestimoDTO {
 
     public void setResponsavelEmprestimoNome(String responsavelEmprestimoNome) {
         this.responsavelEmprestimoNome = responsavelEmprestimoNome;
+    }
+
+    public Long getResponsavelEmprestimoId() {
+        return responsavelEmprestimoId;
+    }
+
+    public void setResponsavelEmprestimoId(Long responsavelEmprestimoId) {
+        this.responsavelEmprestimoId = responsavelEmprestimoId;
     }
 }
